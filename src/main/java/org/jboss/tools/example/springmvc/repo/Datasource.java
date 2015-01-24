@@ -12,7 +12,7 @@ public class Datasource {
 
     public DataSource getDatasource() throws NamingException {
         Context initialContext = new InitialContext();
-        DataSource datasource = (DataSource)initialContext.lookup("java:jboss/datasources/ExampleDS");
+        DataSource datasource = (DataSource)initialContext.lookup("java:jboss/datasources/MysqlDS");
         return datasource;
     }
 }
